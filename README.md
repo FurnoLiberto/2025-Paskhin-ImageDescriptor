@@ -20,6 +20,12 @@
 - **Eval ROUGE-1:** 0.26 (модель начала угадывать ключевые слова).
 - **Eval BLEU:** ~0.0 (из-за малого размера выборки модель не выучила сложные грамматические конструкции для точного совпадения).
 
+<img width="1119" height="392" alt="изображение" src="https://github.com/user-attachments/assets/df67679a-35b8-42b8-ab6e-e8fe5248db25" />
+
+<img width="1180" height="394" alt="изображение" src="https://github.com/user-attachments/assets/9c530d85-b2af-42b3-9ab3-887421fcb847" />
+
+<img width="1167" height="394" alt="изображение" src="https://github.com/user-attachments/assets/bce8e253-5718-4891-ab8b-7c279bf7ae76" />
+
 Графики обучения (Loss) доступны в папке `runs/` (TensorBoard).
 
 ## Как запустить
