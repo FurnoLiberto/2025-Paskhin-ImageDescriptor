@@ -1,5 +1,4 @@
-# 2025-Paskhin-ImageDescriptor
-# Image Captioning with Vision Encoder-Decoder
+# Обучение модели описания изображений
 
 Проект по обучению модели описания изображений (Image Captioning) на датасете COCO 2014.
 
