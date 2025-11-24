@@ -1,2 +1,6 @@
 image_captioning_model/
+processed_data/
 __pycache__/
+COCO.py
+runs/
+.ipynb_checkpoints/

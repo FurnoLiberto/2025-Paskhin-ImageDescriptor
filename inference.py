@@ -7,7 +7,8 @@ from transformers import VisionEncoderDecoderModel, AutoTokenizer, AutoImageProc
 def predict_caption(image_path, model_path, max_length=16):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # Загрузка модели и инструментов
+    print(f"Загрузка модели из {model_path}...")
+    # Загрузка обученной модели
     model = VisionEncoderDecoderModel.from_pretrained(model_path).to(device)
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     image_processor = AutoImageProcessor.from_pretrained(model_path)
@@ -33,7 +34,8 @@ def predict_caption(image_path, model_path, max_length=16):
     )
     
     preds = tokenizer.batch_decode(output_ids[0], skip_special_tokens=True)
-    return preds[0].strip()
+    caption = preds[0].strip()
+    return caption
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -42,5 +44,10 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    caption = predict_caption(args.image_path, args.model_path)
-    print(f"Generated Caption: {caption}")
+    try:
+        caption = predict_caption(args.image_path, args.model_path)
+        print("-" * 30)
+        print(f"Сгенерированное описание: {caption}")
+        print("-" * 30)
+    except Exception as e:
+        print(f"Ошибка: {e}")

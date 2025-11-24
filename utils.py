@@ -4,7 +4,7 @@ import numpy as np
 # Загрузка метрик
 bleu = evaluate.load("bleu")
 rouge = evaluate.load("rouge")
-# spice = evaluate.load("spice") # SPICE требует Java и скачивания зависимостей, раскомментируйте если среда позволяет
+# spice = evaluate.load("spice") # SPICE требует Java и скачивания зависимостей
 
 def compute_metrics(eval_pred, tokenizer):
     preds, labels = eval_pred
