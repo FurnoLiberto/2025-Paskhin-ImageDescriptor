@@ -28,15 +28,17 @@
 1. Подготовка данных:
   
    ```bash
-   python dataloader.py --limit_data 1000 --save_path "./processed_data"
+   python dataloader.py --limit_data 50000 --save_path "./processed_data"
 
-3. Обучение:
-  ```bash
-  python train.py --data_path "./processed_data" --epochs 3
+2. Обучение:
+  
+   ```bash
+   python train.py --data_path "./processed_data" --epochs 10
 
 3. Инференс (проверка):
-  ```bash
-  python inference.py --image_path "URL_КАРТИНКИ"
+  
+   ```bash
+   python inference.py --image_path "URL_КАРТИНКИ"
 
 
 ## Выводы
