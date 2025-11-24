@@ -17,7 +17,7 @@
 ## Результаты обучения
 Обучение проводилось в течение 10 эпох.
 - **Training Loss:** снизился с 3.81 до 0.9.
-- **Eval ROUGE-2:** 0.005 (модель начала угадывать ключевые слова).
+- **Eval ROUGE-2:** 0.005 (модель начала угадывать пары слова).
 - **Eval BLEU:** ~0.0 (из-за малого размера выборки модель не выучила сложные грамматические конструкции для точного совпадения).
 
 <img width="1119" height="392" alt="изображение" src="https://github.com/user-attachments/assets/df67679a-35b8-42b8-ab6e-e8fe5248db25" />
@@ -25,6 +25,9 @@
 <img width="1180" height="394" alt="изображение" src="https://github.com/user-attachments/assets/9c530d85-b2af-42b3-9ab3-887421fcb847" />
 
 <img width="1144" height="420" alt="изображение" src="https://github.com/user-attachments/assets/ed2a0b4f-06a3-49c6-a83a-1bb856391b48" />
+
+<img width="357" height="357" alt="изображение" src="https://github.com/user-attachments/assets/32034338-c5f8-4eb2-897a-7780d70d0179" />
+
 
 
 Графики обучения (Loss) доступны в папке `runs/` (TensorBoard).
